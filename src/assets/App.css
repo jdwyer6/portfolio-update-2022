@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/ixd7fuk.css");
+* {
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header-container {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  height: 100vh;
+}
+.header-container .image-primary {
+  width: 80vw;
+  height: 90vh;
+  background-color: #6C9BB3;
+  position: absolute;
+  z-index: -5;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(108, 155, 179, 0)), url(images/computer.jpg);
+  background-size: cover;
+}
+.header-container .image-secondary {
+  width: 92vw;
+  height: 80vh;
+  background-color: #ecf0f3;
+  position: absolute;
+  z-index: -10;
+}
+.header-container .header-text {
+  margin-top: 50vh;
+  margin-right: 10vw;
+}
+.header-container .header-text h1 {
+  font-weight: 400;
+}
+.header-container .header-text h3 {
+  font-weight: 200;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(69, 70, 71, 0.3);
+}
+.navbar-brand {
+  font-family: mrsheffield-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-card {
+  width: auto;
+  margin: 2rem auto;
+  color: black;
+  background-image: linear-gradient(to bottom right, #ecf0f3, rgba(236, 240, 243, 0.5));
+}
+
+.btn.btn-primary {
+  background-color: #6C9BB3;
+  border: none;
+  min-width: 8rem;
+}
+.btn.btn-primary:hover {
+  background-color: #454647;
+}
+.btn.btn-primary:focus {
+  background-color: #454647;
+}
+.btn.btn-primary:active {
+  background-color: #6C9BB3;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.image-preview {
+  width: 70%;
+}
+.image-preview__bg {
+  background-color: #6C9BB3;
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=App.css.map */
