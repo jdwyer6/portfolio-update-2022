@@ -15,13 +15,21 @@ const HomePage = () => {
                         <div className="image-secondary"></div>
                         <div className="header-text">
                             <h1 className='text-end'>Hi I'm Jake</h1>
-                            <h5 className='text-end'>I create modern, beautiful websites and love what I do.</h5>
+                            <h5 className='text-end'>I love to design and create beautiful websites.</h5>
                         </div>
 
                 </Row>
                 <Row className='mx-5'>
                     <h1 id='projects' className="px-0">My Projects</h1>
                 </Row>
+                {/* <ProjectCard 
+                title='Employee Portal'
+                subtitle=''
+                tech=''
+                img=''
+                projectLink=''
+                githubLink=''
+                /> */}
                 <ProjectCard 
                     title='Paw Portraits' 
                     subtitle='A fun website for creating personalized artwork featuring for pet-lovers.' 
@@ -30,14 +38,14 @@ const HomePage = () => {
                     projectLink='https://pawportraits.netlify.app/'
                     githubLink='https://github.com/jdwyer6/silhouettes'
                 />
-                <ProjectCard title='Employee Portal' />
                 <ProjectCard title='FADM' img={FADMPreview} />
                 <ProjectCard title='Flecks Appliance Center' img={FlecksPreview} />
                 <ProjectCard title='Single Div' />
-                <p>Carb Counter</p>
+                <p>Carb Counter, FARAH</p>
                 <Row>
                     <h1>Games</h1>
                     <p>C# and Unity</p>
+                    <p>Farah Arquitectura...worked on making website accessible with aria lables and this site https://learn-the-web.algonquindesign.ca/topics/accessibility-cheat-sheet/</p>
                 </Row>
             </Container>
 
