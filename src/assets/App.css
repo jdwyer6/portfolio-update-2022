@@ -5,13 +5,19 @@
   font-style: normal;
 }
 
-.header-container {
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.home-header-container {
   display: flex;
   justify-content: end;
   position: relative;
   height: 100vh;
 }
-.header-container .image-primary {
+.home-header-container .image-primary {
   width: 80vw;
   height: 90vh;
   background-color: #6C9BB3;
@@ -20,22 +26,28 @@
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(108, 155, 179, 0)), url(images/computer.jpg);
   background-size: cover;
 }
-.header-container .image-secondary {
+.home-header-container .image-secondary {
   width: 92vw;
   height: 80vh;
   background-color: #ecf0f3;
   position: absolute;
   z-index: -10;
 }
-.header-container .header-text {
-  margin-top: 50vh;
-  margin-right: 10vw;
+.home-header-container .home-header-text {
+  margin-top: 55vh;
+  margin-right: 8vw;
+  width: 40%;
 }
-.header-container .header-text h1 {
+.home-header-container .home-header-text h1 {
   font-weight: 400;
+  text-align: end;
+  font-size: clamp(35px, 4vw, 80px);
 }
-.header-container .header-text h3 {
-  font-weight: 200;
+.home-header-container .home-header-text h5 {
+  font-weight: 400;
+  text-align: end;
+  font-size: clamp(20px, 2vw, 30px);
+  letter-spacing: 0.2rem;
 }
 
 .navbar {
@@ -59,6 +71,7 @@
   background-color: #6C9BB3;
   border: none;
   min-width: 8rem;
+  border-radius: 0px;
 }
 .btn.btn-primary:hover {
   background-color: #454647;
@@ -86,11 +99,122 @@
 }
 
 .y-margin-large {
-  margin: 40vh 0 5vh 0;
+  margin-top: 40vh;
+  margin-bottom: 4vh;
 }
 
 .section-gradient {
   background-image: linear-gradient(transparent, #ecf0f3, transparent);
+}
+
+.xl-font-size {
+  font-size: clamp(24px, 8vw, 250px);
+}
+
+.display-xl-static {
+  position: absolute;
+}
+
+.h1-responsive {
+  font-size: clamp(3rem, 7vw, 8rem);
+}
+
+.h2-responsive {
+  font-size: clamp(2rem, 6vw, 8rem);
+}
+
+.p-responsive {
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.project-info-conclusion-section {
+  margin-top: 10vw;
+}
+
+.bottle {
+  height: 480px;
+  width: 180px;
+  margin: auto;
+  border-radius: 70px 70px 5px 5px;
+  background: linear-gradient(to right, #ffb64c 50px, transparent 50px, transparent 130px, #ffb64c 130px), linear-gradient(to bottom, #260F0a 100px, #ffb64c 100px, #ffb64c 130px, #260F0a 130px, #260F0a 165px, #ffb64c 165px, #ffb64c 215px, #df9930 215px, #df9930 245px, #260F0a 245px);
+  background-size: 180px 155px, 100% 100%;
+  background-position: 0 100px, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  box-shadow: 15px 20px 25px rgba(30, 30, 30, 0.5);
+  transform: rotateZ(15deg);
+}
+.bottle:before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 70px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -170px;
+  z-index: -1;
+  background: linear-gradient(to bottom, #df9930 35%, #ffb64c 35%, #ffb64c 50%, #592316 50%, #592316 70%, #260F0a 70%), linear-gradient(to right, green, blue);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 15px 20px 25px rgba(30, 30, 30, 0.18);
+}
+.bottle:after {
+  content: "";
+  position: absolute;
+  height: 560px;
+  width: 50%;
+  bottom: 0;
+  right: 50%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
+}
+
+@media all and (max-width: 1200px) {
+  .home-header-container .home-header-text {
+    margin: 10vh auto;
+    width: 75%;
+  }
+  .home-header-container .home-header-text h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  .home-header-container .home-header-text h5 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  .stacked-images {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .display-xl-static {
+    position: static;
+  }
+  .y-margin-large {
+    margin-top: 6vh;
+  }
+}
+@media all and (max-width: 992px) {
+  .home-header-container .image-primary {
+    width: 100%;
+  }
+  .project-info-conclusion-section {
+    margin-top: 15vh;
+  }
+}
+@media all and (max-width: 600px) {
+  .home-header-container .image-secondary {
+    display: none;
+  }
+  .image-preview {
+    width: 100%;
+  }
+  .project-info-conclusion-section {
+    margin-top: 7vh;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

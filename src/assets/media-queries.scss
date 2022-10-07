@@ -1,0 +1,72 @@
+//BREAKPOINTS
+//XL > 1200px
+@media all and (max-width: 1200px){
+    
+    .home-header-container{
+        .home-header-text{
+            margin: 10vh auto;
+            width: 75%;
+        
+            h1{
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 5px black;
+
+            }
+
+            h5{
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 5px black;
+
+            }
+        }
+    }
+
+    .stacked-images{
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .display-xl-static{
+        position: static;
+    }
+
+    .y-margin-large{
+        margin-top: 6vh;
+    }
+
+}
+
+//LG
+@media all and (max-width: 992px){
+    .home-header-container{
+        .image-primary{
+            width: 100%;
+        }
+    }
+
+    .project-info-conclusion-section{
+        margin-top: 15vh;
+    }
+}
+
+@media all and (max-width: 600px){
+    .home-header-container{
+
+        .image-secondary{
+            display:none;
+        }
+    }
+
+
+    .image-preview{
+        width: 100%;
+    }
+
+    .project-info-conclusion-section{
+        margin-top: 7vh;
+    }
+}

@@ -30,7 +30,7 @@ const PawPrintsPage = () => {
             feature3='A cart system. I plan to build this feature out in the future adding Stripe to accept payments.'
             feature4='Mobile responsive.'
             challenges='The first challenge I ran into with this project was finding a way to get my images to line up. Since each layer is rendered as a separate png layer with transparency I had to find a way to keep everything together even when changing screen sizes. It was a interesting problem that I was able to solve fairly easily by changing the way I grouped my divs in the JSX and experimenting with relative and absolute positioning. After receiving feedback from the project, I also realized users needed a way to view the preview on mobile while selecting different options since screen size was presenting an issue. I fixed this by using sticky positioning on small devices to keep the preview window in frame.'
-            techUsed={<h3 className='fs-1'><GrReactjs className="mx-5"/> React <TbBrandBootstrap className="mx-5"/>Bootstrap<DiSass className="mx-5"/>SASS</h3>}
+            techUsed={<h3 className='fs-1 '><GrReactjs className="mx-md-5 mx-1"/> React <TbBrandBootstrap className="mx-md-5 mx-1"/>Bootstrap<DiSass className="mx-md-5 mx-1"/>SASS</h3>}
             conclusion='Overall I really enjoyed this project and it really helped to solidify a lot of the react concepts I had been working on. In the future I would love to continue building this project out and maybe eventually find a printing company to fulfill orders, connect it with Stripe to accept payments and finally launch it and see what happens.'
         />
      );
