@@ -17,7 +17,7 @@ const HomePage = () => {
                         <div className="image-secondary"></div>
                         <div className="home-header-text">
                             <h1>Hi, I'm Jake</h1>
-                            <h5>I love to design and create beautiful websites.</h5>
+                            <h5>I love to design and build beautiful websites.</h5>
                         </div>
 
                 </Row>

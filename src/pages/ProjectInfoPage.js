@@ -84,7 +84,7 @@ const ProjectInfoPage = ({
                 </Col>
                 <Col lg='5'>
                     <h2 className='text-center h2-responsive'>Conclusions</h2>
-                    <p className='p-responsive text-start text-md-center'>{conclusion}</p>
+                    <p className='p-responsive text-center'>{conclusion}</p>
                 </Col>
                 <Col className='d-lg-none d-inline'>
                     <img src={img7} style={{boxShadow: '2px 2px 5px rgba(0, 0, 0, .5)'}} width='100%' height='auto'></img>

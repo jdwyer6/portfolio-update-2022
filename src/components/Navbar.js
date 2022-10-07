@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const NBar = () => {
     return ( 
         <Navbar expand="lg">
-            <Container fluid>
+            <Container fluid className='mx-3'>
                 <Navbar.Brand as={Link} to='/' className='mx-3'>Jake Dwyer</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
