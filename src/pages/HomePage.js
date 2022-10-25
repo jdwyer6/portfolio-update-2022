@@ -6,6 +6,9 @@ import PawPrintsPreview from '../assets/images/PawPrintsPreview.png';
 import CSSDrawingPreview from '../assets/images/cssDrawing/thumbnail.png';
 import FlecksPreview from '../assets/images/FlecksPreview.png';
 import farahPreview from '../assets/images/farah/preview.png';
+import basketball from '../assets/images/basketball.jpg';
+import tackticalballoons from '../assets/images/tackticalballoonsthumbnail.png'
+import dog from '../assets/images/dog.png';
 
 
 const HomePage = () => {
@@ -52,11 +55,11 @@ const HomePage = () => {
                 img={CSSDrawingPreview}
                 />
                 <Row className='mx-3 mx-md-5 text-center'>
-                    <h1>Other Projects</h1>
-                    <OtherProjectsCard title='CSS Single Div'/>
-                    <OtherProjectsCard title='BasketBall Game' />
-                    <OtherProjectsCard title='"TACKtical Balloons' />
-                    <OtherProjectsCard title='Dog game' />
+                    <h1>Games and Other Projects</h1>
+                    <OtherProjectsCard title='Flecks' />
+                    <OtherProjectsCard title='BasketBall Game' img={basketball} />
+                    <OtherProjectsCard title='"TACKtical Balloons' img={tackticalballoons}/>
+                    <OtherProjectsCard title='Dog game' img={dog}/>
                 </Row>
                 
 
