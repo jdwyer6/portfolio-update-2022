@@ -1,6 +1,7 @@
 import NBar from "../components/Navbar";
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
+import OtherProjectsCard from "../components/OtherProjectsCard";
 import PawPrintsPreview from '../assets/images/PawPrintsPreview.png';
 import CSSDrawingPreview from '../assets/images/cssDrawing/thumbnail.png';
 import FlecksPreview from '../assets/images/FlecksPreview.png';
@@ -50,9 +51,18 @@ const HomePage = () => {
                 title='Single Div'
                 img={CSSDrawingPreview}
                 />
+                <Row className='mx-3 mx-md-5 text-center'>
+                    <h1>Other Projects</h1>
+                    <OtherProjectsCard title='CSS Single Div'/>
+                    <OtherProjectsCard title='BasketBall Game' />
+                    <OtherProjectsCard title='"TACKtical Balloons' />
+                    <OtherProjectsCard title='Dog game' />
+                </Row>
+                
 
                 {/* Other projects Section: Flecks and Carb Counter */}
                 {/* Games Section */}
+                {/* Single Div */}
             </Container>
 
             

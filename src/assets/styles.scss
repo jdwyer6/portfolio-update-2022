@@ -156,6 +156,16 @@ $white: #FFFFFF;
     margin-top: 10vw;
 }
 
+.other-project-card{
+    // background-color: $gray-light;
+    height: 400px;
+    width: auto;
+    margin: 2rem auto;
+    color: black;
+    border: 1px solid $primary;
+    background-image: linear-gradient(to bottom right, rgba($gray-light, 1), rgba($gray-light, .5));
+}
+
 //CSS DRAWINGS
 
 //BOTTLE: color palette
