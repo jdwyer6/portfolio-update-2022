@@ -1,5 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import resume from '../assets/images/resume.png'
+import { AiOutlineMail, AiOutlineLinkedin } from 'react-icons/ai';
+import {TbSeparator} from 'react-icons/tb';
+import {BsBriefcase} from 'react-icons/bs';
 
 const ResumePage = () => {
     const mainColor = '#6C9BB3'
@@ -9,11 +11,16 @@ const ResumePage = () => {
                 <h1 style={{fontSize: '3rem'}}>Jake Dwyer</h1>
                 <div className='' style={{backgroundColor: '#6C9BB3'}}>
                     <h2 className='w-100 text-white my-0' style={{fontSize: '2rem'}}>Software Developer</h2>
-                    <p className='my-0 text-white fw-normal' style={{letterSpacing: '2px'}}>Email: dwyerjakej@gmail.com - Portfolio: jakedwyer.com - LinkedIn: dwyer-jake25</p>
+                    <div className='d-flex flex-row justify-content-center'>
+                        <p className='my-0 text-white fw-normal mx-4' style={{letterSpacing: '2px'}}><AiOutlineMail /> dwyerjakej@gmail.com </p>
+                        <p className='my-0 text-white fw-normal mx-4' style={{letterSpacing: '2px'}}> <BsBriefcase /> jakedwyer.com </p>
+                        <p className='my-0 text-white fw-normal mx-4' style={{letterSpacing: '2px'}}><AiOutlineLinkedin /> dwyer-jake25</p>
+                    </div>
+
                 </div>
             </Row>
             <Row>
-                <Col md='3'>
+                <Col md='4'>
                     <h3 style={{borderBottom: `5px solid ${mainColor}`}}>Education</h3>
                     <div>
                         <h4>Full Stack Web Development Certification</h4>
