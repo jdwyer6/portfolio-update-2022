@@ -1,8 +1,8 @@
 import HomePage from './pages/HomePage';
 import PawPrintsPage from './pages/PawPrintsPage';
 import FarahPage from './pages/FarahPage';
-import CSSDrawingPage from './pages/CSSDrawingPage';
 import ResumePage from './pages/ResumePage';
+import ClockedInPage from './pages/ClockedInPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -17,8 +17,8 @@ function App() {
         		<Route path='/' element={<HomePage />}/>
 				<Route path='PawPrintsPage' element={<PawPrintsPage />}/>
 				<Route path='FarahPage' element={<FarahPage />}/>
-				{/* <Route path='CSSDrawingPage' element={<CSSDrawingPage />}/> */}
 				<Route path='resume' element={<ResumePage />}/>
+				<Route path='clockedin' element={<ClockedInPage />}/>
 			</Routes>
 
       	</div>

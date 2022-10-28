@@ -2,7 +2,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function OtherProjectsCard({title, img, tech, description, siteLink}) {
+function OtherProjectsCard({title, img, tech, description, siteLink, buttonText}) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={img} height='60%' style={{objectFit: 'cover'}}/>
@@ -14,8 +14,7 @@ function OtherProjectsCard({title, img, tech, description, siteLink}) {
         <Card.Text className='border-top border-bottom'>
             {tech}
         </Card.Text>
-        <Button variant="primary" className='my-1 w-100' href={siteLink}>Visit Project</Button>
-        <Button variant="primary" className='my-1 w-100'>Details</Button>
+        <Button variant="primary" className='my-1 w-100' target='_blank' href={siteLink}>{buttonText}</Button>
       </Card.Body>
     </Card>
   );

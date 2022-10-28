@@ -37,9 +37,9 @@ const HomePage = () => {
                     subtitle='A fullstack application offering a streamlined solution for businesses to keep track of employee hours.' 
                     tech='MongoDB | Express | NodeJS | React  |  Redux | Bootstrap' 
                     img={clockedin}
-                    projectLink=''
+                    projectLink='https://clocked-in.netlify.app/'
                     githubLink='https://github.com/jdwyer6/time-tracker'
-                    projectPage=''
+                    projectPage='clockedin'
                 />
                 <ProjectCard 
                     title='Paw Portraits' 
@@ -59,22 +59,40 @@ const HomePage = () => {
                     githubLink='https://github.com/jdwyer6/fara-arquitectura'
                     projectPage='FarahPage'
                 />
-                {/* <ProjectCard 
-                title='Single Div'
-                img={CSSDrawingPreview}
-                /> */}
                 <Row className='mx-3 mx-md-5 my-5 text-center d-flex justify-content-between'>
                     <h1 className='my-5'>Games and Other Projects</h1>
-                    <OtherProjectsCard title='Flecks Appliance Center' img={FlecksPreview} tech='React - Bootstrap - SASS' description='A business website for a local appliance retail store.' siteLink='https://flecksappliancecenter.com/'/>
-                    <OtherProjectsCard title='Doodle Ball' img={basketball} tech='C# - Unity' description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more!'/>
-                    <OtherProjectsCard title='TACKtical Balloons' img={tackticalballoons} tech='C# - Unity' description='Armed with tacks as projectiles, blast your way through hordes of evil balloons.'/>
-                    <OtherProjectsCard title='Fetch!' img={dog} tech='C# - Unity' description='Stack abilities by catching frisbees and collect bones for points in an epic platformer.'/>
+                    <OtherProjectsCard 
+                        title='Flecks Appliance Center' 
+                        img={FlecksPreview} buttonText='Visit project' 
+                        tech='React - Bootstrap - SASS' 
+                        description='A business website for a local appliance retail store.' 
+                        siteLink='https://flecksappliancecenter.com/'
+                    />
+                    <OtherProjectsCard 
+                        title='Doodle Ball' 
+                        siteLink='https://whospayingformike.itch.io/doodle-ball' 
+                        img={basketball} 
+                        tech='C# - Unity' 
+                        buttonText='Play the game!' 
+                        description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more!'
+                    />
+                    <OtherProjectsCard 
+                        title='TACKtical Balloons' 
+                        siteLink='https://whospayingformike.itch.io/tackticalballoons' 
+                        img={tackticalballoons} 
+                        tech='C# - Unity' 
+                        buttonText='Play the game!' 
+                        description='Armed with tacks as projectiles, blast your way through hordes of evil balloons.'
+                    />
+                    <OtherProjectsCard 
+                        title='Fetch!' 
+                        siteLink='https://whospayingformike.itch.io/dogrungame' 
+                        img={dog} tech='C# - Unity' 
+                        buttonText='Play the game!' 
+                        description='Stack abilities by catching frisbees and collect bones for points in an epic platformer.'
+                        />
                 </Row>
-                
-
-                {/* Other projects Section: Flecks and Carb Counter */}
-                {/* Games Section */}
-                {/* Single Div */}
+            
             </Container>
 
             
