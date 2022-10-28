@@ -1,14 +1,64 @@
 @import url("https://use.typekit.net/ixd7fuk.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   font-family: forma-djr-display, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
+.alt-font {
+  font-family: sans-serif;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, p, li {
+  letter-spacing: 1px;
+}
+
+.resume-text div {
+  margin: 1rem 0;
+}
+.resume-text h3 {
+  font-weight: 400;
+}
+.resume-text h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.resume-text h5 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.resume-text h6 {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+.resume-text p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.resume-text li {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.resume-text .li-summary {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .home-header-container {
@@ -131,6 +181,15 @@
 
 .project-info-conclusion-section {
   margin-top: 10vw;
+}
+
+.other-project-card {
+  height: 400px;
+  width: auto;
+  margin: 2rem auto;
+  color: black;
+  border: 1px solid #6C9BB3;
+  background-image: linear-gradient(to bottom right, #ecf0f3, rgba(236, 240, 243, 0.5));
 }
 
 .bottle {

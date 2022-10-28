@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaGithub, FaPager } from 'react-icons/fa';
 import { TbWorld } from 'react-icons/tb'
@@ -24,6 +25,12 @@ const ProjectInfoPage = ({
     conclusion
 }) => {
     
+    useEffect(() => {
+      window.scroll(0,0)
+
+    }, [])
+    
+
     return ( 
     <Container fluid>
         <Row className='align-items-center p-3 p-lg-5'>
@@ -93,7 +100,7 @@ const ProjectInfoPage = ({
         </section>
             <Row className='my-5 my-md-5 p-3 p-lg-5'>
                 <h2 className='text-center h2-responsive'><TbWorld className='mx-3'/>Technologies Used</h2>
-                <p className='my-md-5 my-3 text-center p-responsive'>{techUsed}</p>
+                <div className='my-md-5 my-3 text-center p-responsive'>{techUsed}</div>
             </Row>
         
     </Container>
