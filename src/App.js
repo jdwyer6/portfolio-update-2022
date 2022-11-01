@@ -22,7 +22,7 @@ function App() {
 				<Route path='resume' element={<ResumePage />}/>
 				<Route path='clockedin' element={<ClockedInPage />}/>
 				<Route path='contact' element={<ContactPage />} />
-				<Route path='success' element={<SuccessPage />} />
+				<Route path='/success' element={<SuccessPage />} />
 			</Routes>
 
       	</div>
