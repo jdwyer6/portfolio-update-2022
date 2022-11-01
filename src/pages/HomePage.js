@@ -43,7 +43,7 @@ const HomePage = () => {
                 />
                 <ProjectCard 
                     title='Paw Portraits' 
-                    subtitle='A fun website for creating personalized artwork featuring for pet-lovers.' 
+                    subtitle='A fun website for creating personalized artwork for pet-lovers.' 
                     tech='React  |  Bootstrap | SASS' 
                     img={PawPrintsPreview}
                     projectLink='https://pawportraits.netlify.app/'

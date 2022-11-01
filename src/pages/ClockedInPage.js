@@ -27,10 +27,10 @@ const ClockedInPage = () => {
             img6={img5}
             img7={img6}
             feature1='A fully functional front and back end.'
-            feature2='User validation and login/out functionality.'
+            feature2='User validation and log in/out functionality.'
             feature3='User authentication and use of tokens and password hashing.'
             feature4='A clean UI and responsive mobile design.'
-            challenges='I faced many challenges when developing this app. I learned so much about cyber security and the various methods to keep customer and site data safe. I am continuing to improve in this area and will keep updating my app as I keep researching and building upon my knowledge. I also improved a lot with error handling. Also, I used a lot of javascript with this project and learned a lot about working with javascript dates and how to pass and store information related to the date method.'
+            challenges='I faced many challenges when developing this app. I learned so much about cyber security and the various methods to keep customer and site data safe. I am continuing to improve in this area and will keep updating my app as I keep researching and building upon my knowledge. I also improved a lot with error handling. I used a lot of javascript with this project and learned a lot about working with javascript dates and how to pass and store information related to the date method.'
             techUsed={<h3 className='fs-1'><FaNode className="mx-md-4 mx-1" />NodeJS< FaDatabase className="mx-md-4 mx-1" />MongoDB<FaServer className="mx-md-4 mx-1" />Express<GrReactjs className="mx-md-4 mx-1"/> React <TbBrandBootstrap className="mx-md-4 mx-1"/>Bootstrap<DiSass className="mx-md-4 mx-1"/>SASS</h3>}
             conclusion="I loved working on this project and can't wait to continue to expand the app, add new features and polish the current code. This is exactly the type of project that excites me and keeps me wanting to learn more and more about software development."
         />

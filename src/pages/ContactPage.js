@@ -33,7 +33,7 @@ const ContactPage = () => {
                         </Form.Group>
                         <Form.Group className='mb-3'>
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" aria-label="With textarea" placeholder='Type your message here'></Form.Control>
+                            <Form.Control as="textarea" aria-label="With textarea" name="message" required placeholder='Type your message here'></Form.Control>
                         </Form.Group>
                         <Button type="submit">Submit</Button>
                     </Form>
