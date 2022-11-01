@@ -13,8 +13,21 @@ $white: #FFFFFF;
     font-style: normal;
 }
 
+body, html{
+    overflow-x: hidden;
+    position: relative;
+}
+
 .alt-font{
     font-family: sans-serif;
+}
+
+.form-control{
+    border-radius: 0px;
+    &:focus{
+        border-color: $primary;
+        box-shadow: 0 1px 1px rgba($primary, .75) inset, 0 0 4px $primary;
+    }
 }
 
 .container-fluid{
@@ -94,8 +107,8 @@ h1, h2, h3, h4, h5, p, li{
         background-color: $primary;
         position: absolute;
         z-index: -5;
-        background-image: linear-gradient(to bottom right, rgba($white, .6), rgba($primary, 0)), url(images/computer.jpg);
-        // background-image: url(images/computer.jpg);
+        background-image: linear-gradient(to bottom right, rgba($white, .8), rgba($primary, 0)), url(images/computer.jpg);
+        // background-image: linear-gradient(to bottom right, rgba($white, .8), rgba($primary, 0)), url(images/homeimage.jpg);
         background-size: cover;
     }
 

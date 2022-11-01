@@ -6,8 +6,21 @@
   font-style: normal;
 }
 
+body, html {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .alt-font {
   font-family: sans-serif;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+.form-control:focus {
+  border-color: #6C9BB3;
+  box-shadow: 0 1px 1px rgba(108, 155, 179, 0.75) inset, 0 0 4px #6C9BB3;
 }
 
 .container-fluid {
@@ -73,7 +86,7 @@ h1, h2, h3, h4, h5, p, li {
   background-color: #6C9BB3;
   position: absolute;
   z-index: -5;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(108, 155, 179, 0)), url(images/computer.jpg);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(108, 155, 179, 0)), url(images/computer.jpg);
   background-size: cover;
 }
 .home-header-container .image-secondary {

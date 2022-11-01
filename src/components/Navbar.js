@@ -15,7 +15,7 @@ const NBar = () => {
                         <Nav.Link as={Link} to='/' className='mx-3'>Home</Nav.Link>
                         <Nav.Link href="/#projects" className='mx-3'>Projects</Nav.Link>
                         <Nav.Link as={Link} to='resume' className='mx-3'>Resume</Nav.Link>
-                        <Nav.Link href="#link" className='mx-3'>Contact</Nav.Link>
+                        <Nav.Link as={Link} to='contact' className='mx-3'>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
