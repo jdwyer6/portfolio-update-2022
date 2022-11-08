@@ -22,6 +22,22 @@ h1 {
   color: #575757;
 }
 
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  color: #575757;
+}
+
 h4 {
   font-size: 20px;
   font-weight: 500;
@@ -33,9 +49,73 @@ h4 {
   position: relative;
 }
 
+.h4-bold {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #575757;
+}
+
+.h4-spaced-dark {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.785em;
+  color: #575757;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+}
+
 p {
   font-size: 16px;
+  color: #575757;
+  margin-bottom: 0px;
+}
+
+.p-normal {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #575757;
+}
+
+.p-gray {
   color: #9E9E9E;
+}
+
+.p-large {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #575757;
+}
+
+.p-small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #575757;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
 .height-screen {
@@ -92,6 +172,37 @@ p {
   position: relative;
   z-index: 10;
   color: #575757;
+}
+
+.gradient-vertical {
+  background-image: linear-gradient(to bottom, #F5F5F5, #F6DEC8, #F5F5F5);
+  padding: 6rem;
+}
+
+.top-space {
+  margin-top: 6rem;
+}
+
+.clock-bg {
+  background-size: cover;
+  background-image: linear-gradient(#575757, rgba(87, 87, 87, 0)), url("images/ClockedInBG.jpg");
+}
+
+.featured-project-text-container {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  padding: 6rem;
+  width: 40%;
+}
+
+.menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+.menu-items:hover > .menu-item:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=App.css.map */
