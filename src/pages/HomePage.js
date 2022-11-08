@@ -10,13 +10,34 @@ import basketball from '../assets/images/basketball.jpg';
 import tackticalballoons from '../assets/images/tackticalballoonsthumbnail.png'
 import dog from '../assets/images/dog.png';
 import clockedin from '../assets/images/clockedin.png';
-
+import { BsStackOverflow } from "react-icons/bs";
+import Button_Primary from "../components/Button_Primary";
 
 const HomePage = () => {
     return ( 
         <>
+            <Container fluid>
+                <Row className='height-screen d-flex align-items-center position-relative'>
+                    <Col className='position-relative text-center'>
+                        <h1 style={{zIndex: '5', position: 'relative'}}>JAKE DWYER</h1>
+                        <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>JAKE DWYER</h1>
+                        <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '30%'}}>JAKE DWYER</h1>
+                        <h1 className='bg-text-large' style={{zIndex: '2', opacity: '15%', top: '15%'}}>JAKE DWYER</h1>
+                        <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '70%'}}>JAKE DWYER</h1>
+                        <h1 className='bg-text-large' style={{zIndex: '4', opacity: '5%', top: '75%'}}>JAKE DWYER</h1>
+                        <div className='color-splash-1'></div>
+                        <div className='color-splash-2'></div>
+                        <h4 style={{marginTop: '-30px'}}>PORTFOLIO</h4>
+                        <Button_Primary text='GO TO PROJECTS'/>
+                        <p className="my-3">Software Developer</p>
+                    </Col>
+                    
 
-            <Container fluid className=''>
+                    
+                </Row>
+            </Container>
+
+            {/* <Container fluid className=''>
                 <Row className='home-header-container' width='100vw' height='100vh'>
                         <div className="image-primary"></div>
                         <div className="image-secondary"></div>
@@ -26,9 +47,6 @@ const HomePage = () => {
                         </div>
 
                 </Row>
-                {/* <Row> */}
-                    {/* Skills: Design(photoshop, figma)  Frontend:(HTML, CSS, Javascript, React, Bootstrap, Github) Backend:(node, express, mongodb)    */}
-                {/* </Row> */}
                 <Row className='mx-3 mx-md-5'>
                     <h1 id='projects' className="px-0">My Projects</h1>
                 </Row>
@@ -93,7 +111,7 @@ const HomePage = () => {
                         />
                 </Row>
             
-            </Container>
+            </Container> */}
 
             
         </>

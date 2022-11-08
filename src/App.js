@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       	<div className="App">
-		  <NBar />
+		  {/* <NBar /> */}
 			<Routes>
         		<Route path='/' element={<HomePage />}/>
 				<Route path='PawPrintsPage' element={<PawPrintsPage />}/>
