@@ -12,9 +12,15 @@ import dog from '../assets/images/dog.png';
 import clockedin from '../assets/images/clockedin.png';
 import { BsStackOverflow } from "react-icons/bs";
 import Button_Primary from "../components/Button_Primary";
-import clockedInBG from "../assets/images/ClockedInBG.jpg";
+import clockedInBG from "../assets/images/ClockedInBG.png";
+import clockedInBGHand from "../assets/images/ClockedInBGHand.png";
+import PawPortraitsBG from "../assets/images/PawPortraitsBG.jpg";
+import { useState } from "react";
 
 const HomePage = () => {
+
+    const [backgroundPos, setBackgroundPos] = useState('0% 0%');
+
     return ( 
         <>
             <Container fluid className='position-relative px-0'>
@@ -29,8 +35,8 @@ const HomePage = () => {
                         <div className='color-splash-1'></div>
                         <div className='color-splash-2'></div>
                         <h4 style={{marginTop: '-30px'}}>PORTFOLIO</h4>
-                        <Button_Primary text='GO TO PROJECTS'/>
-                        <p className="my-3">Software Developer</p>
+                        <a><button className='btn-primary' onClick={()=>console.log('click')} >GO TO PROJECTS</button></a>
+                        <p className="my-3 position-relative" style={{zIndex: '9'}}>Software Developer</p>
                     </Col>
                 </Row>
                 <div className='gradient-vertical'>
@@ -159,7 +165,6 @@ const HomePage = () => {
                     </Col>
                 </Row>
                 <Row>
-                    {/* <img className='clock-bg' src={clockedInBG} width='100'></img> */}
                     <div className='clock-bg position-relative'>
                         <img src={clockedInBG} style={{visibility: 'hidden'}}/>
                         <div className='featured-project-text-container'>
@@ -167,15 +172,36 @@ const HomePage = () => {
                             <p className='text-white p-normal'>A fullstack application offering a streamlined solution for businesses to keep track of employee hours.</p>
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
-                                    <a href='' className='menu-item text-decoration-none'><h3 className='text-white'>Visit the site</h3></a>
-                                    <a href='' className='menu-item text-decoration-none'><h3 className='text-white'>Details and Design</h3></a>
-                                    <a href='' className='menu-item text-decoration-none'><h3 className='text-white'>Git Hub Repo</h3></a>
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -10%')}><h3 className='text-white'>Visit the site</h3></a>
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub Repo</h3></a>
                                 </div>
+                                <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div>
                             </div>
                         </div>
-                        
                     </div>
-                    
+                </Row>
+                <Row>
+                    <div className='paw-portraits-bg position-relative' style={{backgroundPosition: backgroundPos}}>
+                        <img src={PawPortraitsBG} style={{visibility: 'hidden'}}/>
+                        <div className='featured-project-text-container'>
+                            <h2 className='text-start'>Paw Portraits</h2>  
+                            <p className='p-normal'>A fun website for creating personalized artwork for pet-lovers.</p>
+                            <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
+                                <div className="menu-items d-flex flex-column ">
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 20%')}><h3>Visit the site</h3></a>
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details and Design</h3></a>
+                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 60%')}><h3>Git Hub Repo</h3></a>
+                                </div>
+                                {/* <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div> */}
+                            </div>
+                        </div>
+                    </div>
+                </Row>
+                <Row>
+                    <div className='gradient-vertical'>
+                        <h1>OTHER PROJECTS</h1>
+                    </div>
                 </Row>
             </Container>
 
