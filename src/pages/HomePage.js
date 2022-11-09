@@ -89,9 +89,9 @@ const HomePage = () => {
                         </Col>
                     </Row>
                     <Row className='top-space'>
-                            <div className='d-md-flex'>
+                            <Row className='d-md-flex'>
                                 <Col xs='12' md='4' className='d-flex align-items-center'>
-                                <h2 className='text-start'>EXPERIENCE</h2>
+                                    <h2 className='text-start'>EXPERIENCE</h2>
                                 </Col>
                                 <Col xs='12' md='4' className='text-start'>
                                     <p className='mb-0'>2014-2022</p>
@@ -111,10 +111,10 @@ const HomePage = () => {
                                     <p className='mb-0 p-small'>Flecks Appliance Center</p>
                                     <p className='mb-0 p-small'>FADM Impresos</p>
                                 </Col>
-                            </div>
+                            </Row>
                     </Row>
                     <Row className='top-space'>
-                        <Col xs='12' md='3' className='d-flex align-items-center'>
+                        <Col xs='12' md='4' className='d-flex align-items-center'>
                             <h2 className='text-start'>SKILLS</h2>
                         </Col>
                          
@@ -137,7 +137,7 @@ const HomePage = () => {
                                 <li>Express</li>
                             </ul>
                         </Col>
-                        <Col xs='12' md='3' className='d-flex flex-column'>
+                        <Col xs='12' md='2' className='d-flex flex-column'>
                             <ul>
                                 <h4 className='h4-bold text-start'>OTHER</h4>
                                 <li>Git</li>
@@ -151,16 +151,16 @@ const HomePage = () => {
 
                     </Row>
                     <Row className="top-space d-flex align-items-center" id='contact'>
-                        <Col>
+                        <Col xs='12' lg='4'>
                             <h2 className='text-start'>CONTACT</h2>
                         </Col>
-                        <Col >
+                        <Col xs='12' lg='4'>
                             <div className='d-flex align-items-center'>
                                 <h4 className='h4-bold mb-0'>Email:</h4>
                                 <p className='mx-3 p-normal'>dwyerjakej@gmail.com</p>
                             </div>
                         </Col>
-                        <Col>
+                        <Col xs='12' lg='4'>
                             <div className='d-flex align-items-center'>
                                 <h4 className='h4-bold mb-0'>LinkedIn:</h4>
                                 <p className='mx-3 p-normal d-block d-md-none'>.../dwyer-jake25</p>
@@ -235,44 +235,51 @@ const HomePage = () => {
                 </Row>
 
                 <Row className='xy-padding-adjusted'>
-                        <h1 className='y-padding'>OTHER PROJECTS</h1>
-                        <Card 
-                            title='FETCH' 
-                            description='Stack abilities by catching frisbees and collect bones for points in an epic platformer. (UNITY/C#)' 
-                            buttonText='Play the game!' 
-                            image='card-image-4'
-                            buttonLink="https://whospayingformike.itch.io/dogrungame"
-                        />
-
-                        <Card 
-                            title='DOODLE BALL' 
-                            description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more! (UNITY/C#)' 
-                            buttonText='Play the game!' 
-                            image='card-image-2'
-                            buttonLink='https://whospayingformike.itch.io/doodle-ball'
-                        />
-                        <Card 
-                            title="'TACK'TICAL BALLOONS" 
-                            description='Armed with tacks as projectiles, blast your way through hordes of evil balloons. (UNITY/C#)' 
-                            buttonText='Play the game!' 
-                            image='card-image-3'
-                            buttonLink='https://whospayingformike.itch.io/tackticalballoons'
-                        />
-                        <Card 
-                            title='FLECKS APPLIANCE CENTER' 
-                            description='A business website for a local appliance retail store. (REACT)' 
-                            buttonText='Visit project' 
-                            image='card-image-1'
-                            buttonLink='https://flecksappliancecenter.com/'
-                        />
-
-
+                        <h1 className='y-padding d-none d-md-block'>OTHER PROJECTS</h1>
+                        <h1 className='y-padding d-block d-md-none text-center' style={{fontSize: '36px'}}>OTHER PROJECTS</h1>
+                        <Col xs='12' md='6' lg='3' className='my-2'>
+                            <Card 
+                                title='FETCH' 
+                                description='Stack abilities by catching frisbees and collect bones for points in an epic platformer. (UNITY/C#)' 
+                                buttonText='Play the game!' 
+                                image='card-image-4'
+                                buttonLink="https://whospayingformike.itch.io/dogrungame"
+                            />
+                        </Col>
+                        <Col xs='12' md='6' lg='3' className='my-2'>
+                        
+                            <Card 
+                                title='DOODLE BALL' 
+                                description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more! (UNITY/C#)' 
+                                buttonText='Play the game!' 
+                                image='card-image-2'
+                                buttonLink='https://whospayingformike.itch.io/doodle-ball'
+                            />
+                        </Col>
+                        <Col xs='12' md='6' lg='3' className='my-2'>
+                            <Card 
+                                title="'TACK'TICAL BALLOONS" 
+                                description='Armed with tacks as projectiles, blast your way through hordes of evil balloons. (UNITY/C#)' 
+                                buttonText='Play the game!' 
+                                image='card-image-3'
+                                buttonLink='https://whospayingformike.itch.io/tackticalballoons'
+                            />
+                        </Col>
+                        <Col xs='12' md='6' lg='3' className='my-2'>
+                            <Card 
+                                title='FLECKS APPLIANCE CENTER' 
+                                description='A business website for a local appliance retail store. (REACT)' 
+                                buttonText='Visit project' 
+                                image='card-image-1'
+                                buttonLink='https://flecksappliancecenter.com/'
+                            />
+                        </Col>
                 </Row>
                 <Row className='x-padding mt-5'>
                     <footer className="d-flex flex-wrap justify-content-between align-items-center py- my-4 border-top border-secondary">
-                        <p className="col-md-4 mb-0 text-muted">Jake Dwyer</p>
+                        <p className="col-md-4 mb-0 text-muted p-2">Jake Dwyer</p>
 
-                        <ul className="nav col-md-4 justify-content-end">
+                        <ul className="nav col-md-4 justify-content-md-end justify-content-start">
                             <Link to="home" className="nav-item nav-link px-2 text-muted link">Home</Link>
                             <Link to='about' className="nav-item nav-link px-2 text-muted link">About</Link>
                             <Link to='projects' className="nav-item nav-link px-2 text-muted link">Projects</Link>

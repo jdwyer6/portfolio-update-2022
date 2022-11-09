@@ -2,6 +2,7 @@ import { Col } from 'react-bootstrap';
 
 const Card = ({title, description, buttonText, image, buttonLink}) => {
     return ( 
+
         <Col className='card card__color-2'>
             <a href={buttonLink} target='_blank'>
                 <div className={image}></div>
@@ -11,8 +12,9 @@ const Card = ({title, description, buttonText, image, buttonLink}) => {
                     <a href={buttonLink} target='_blank'><button className='btn-secondary my-2'>{buttonText}</button></a>
                 </div>
             </a>
-
         </Col>
+
+
      );
 }
  

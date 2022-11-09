@@ -44,16 +44,16 @@ h1{
 h2{
     font-size: clamp(40px, 3.5vw, 90px);
     font-weight: 400;
-    line-height: 90px;
+    line-height: clamp(60px, 6vw, 72px);
     letter-spacing: 0.05em;
     text-align: center;
     color: $gray-dark;
 }
 
 h3{
-    font-size: 48px;
+    font-size: clamp(24px, 3vw, 90px);
     font-weight: 600;
-    line-height: 72px;
+    line-height: clamp(60px, 6vw, 72px);
     letter-spacing: 0em;
     color: $gray-dark;
 }
@@ -244,7 +244,7 @@ ul{
 }
 
 .xy-padding-adjusted{
-    padding: 5rem;
+    padding: clamp(1rem, 6vw, 5rem);
 }
 
 .link{
@@ -286,7 +286,7 @@ ul{
     top: 0;
     left: 0;
     padding: $default-padding;
-    width: 40%;
+    width: clamp(320px, 50%, 680px);
 }
 
 .menu-items{
@@ -327,7 +327,6 @@ ul{
     border: none;
     border-radius: 12px;
     height: 50vh;
-    margin: 1rem;
     overflow: hidden;
     position: relative;
     transition: all 800ms ease;
@@ -396,6 +395,14 @@ ul{
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .farah-bg {
+        background-size: fill;
+      background-position: top;
+      background-repeat:repeat-y;
+    }
+  }
 
 // .alt-font{
 //     font-family: sans-serif;
