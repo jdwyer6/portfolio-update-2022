@@ -175,13 +175,38 @@ ul {
   color: #575757;
 }
 
+.btn-secondary {
+  border-radius: 50px;
+  background-color: #E2DEDD;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0.2rem 2rem;
+  border: none;
+  box-shadow: 4px 4px 4px rgba(87, 87, 87, 0.2), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 10;
+  color: #575757;
+}
+
 .gradient-vertical {
-  background-image: linear-gradient(to bottom, #F5F5F5, #F6DEC8, #F5F5F5);
+  background-image: linear-gradient(to bottom, #F5F5F5, rgba(246, 222, 200, 0.8), rgba(209, 231, 232, 0.8), #F5F5F5);
   padding: 6rem;
+}
+
+.bg-dark {
+  background-color: blue;
 }
 
 .top-space {
   margin-top: 6rem;
+}
+
+.xy-padding {
+  padding: 6rem;
+}
+
+.xy-padding-adjusted {
+  padding: 5rem;
 }
 
 .clock-bg {
@@ -200,6 +225,15 @@ ul {
   transition: all 800ms ease;
 }
 
+.farah-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: bottom;
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.2)), url("images/Architecture/Architecture.png");
+  transition: all 2000ms ease;
+}
+
 .featured-project-text-container {
   position: absolute;
   z-index: 5;
@@ -215,6 +249,7 @@ ul {
 
 .menu-items:hover > .menu-item {
   opacity: 0.3;
+  transition: all 0.4s;
 }
 
 .menu-items:hover > .menu-item:hover {
@@ -237,6 +272,72 @@ ul {
 .menu-items:hover ~ .menu-background-pattern {
   background-size: 35vmin 35vmin;
   opacity: 0.5;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  height: 50vh;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 800ms ease;
+  backface-visibility: hidden;
+}
+.card__color-1 {
+  background-color: #9E9E9E;
+}
+.card__color-2 {
+  background-color: #F5F5F5;
+  box-shadow: 4px 4px 8px rgba(87, 87, 87, 0.4);
+}
+.card .card-image-1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), white), url("images/FlecksPreview.png");
+}
+.card .card-image-2 {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), white), url("images/basketball.jpg");
+}
+.card .card-image-3 {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), white), url("images/tackticalballoonsthumbnail.png");
+}
+.card .card-image-4 {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), white), url("images/dog.png");
+}
+.card .card-text {
+  position: absolute;
+  bottom: 0;
+  color: #575757;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */

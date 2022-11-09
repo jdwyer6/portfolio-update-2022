@@ -20,6 +20,7 @@ $gray-lightest: #F5F5F5;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
+    
 }
 
 body, html{
@@ -197,14 +198,40 @@ ul{
     color: $gray-dark;
 }
 
+.btn-secondary{
+    border-radius: 50px;
+    background-color: $gray-light;
+    font-weight: 700;
+    font-size: 14px;
+    padding: .2rem 2rem;
+    border: none;
+    box-shadow: 4px 4px 4px rgba($gray-dark, .2),
+        inset 6px 6px 12px rgba(white, .4);
+    position: relative;
+    z-index: 10;
+    color: $gray-dark;
+}
+
 .gradient-vertical{
-    background-image: linear-gradient(to bottom, $gray-lightest, $orange-accent, $gray-lightest);
+    background-image: linear-gradient(to bottom, $gray-lightest, rgba($orange-accent, .8), rgba($teal-accent, .8), $gray-lightest);
     padding: 6rem;
 
 }
 
+.bg-dark{
+    background-color: blue;
+}
+
 .top-space{
     margin-top: 6rem;
+}
+
+.xy-padding{
+    padding: 6rem;
+}
+
+.xy-padding-adjusted{
+    padding: 5rem;
 }
 
 .clock-bg{
@@ -223,6 +250,15 @@ ul{
     transition: all 800ms ease;
 }
 
+.farah-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: bottom;
+    background-image: linear-gradient(white, rgba(white, .2)),url('images/Architecture/Architecture.png');
+    transition: all 2000ms ease;
+}
+
 
 .featured-project-text-container{
     position: absolute;
@@ -239,6 +275,7 @@ ul{
 
 .menu-items:hover > .menu-item{
     opacity: .3;
+    transition: all .4s;
 }
 
 .menu-items:hover > .menu-item:hover {
@@ -264,6 +301,80 @@ ul{
     background-size: 35vmin 35vmin;
     opacity: .5;
 
+}
+
+.card{
+    border: none;
+    border-radius: 12px;
+    height: 50vh;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 800ms ease;
+    backface-visibility: hidden;
+
+    &__color-1{
+        background-color: $gray-mid;
+    }
+
+    &__color-2{
+        background-color: $gray-lightest;
+        box-shadow: 4px 4px 8px rgba($gray-dark, .4);
+    }
+
+    .card-image-1{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(white, .2), white), url('images/FlecksPreview.png');
+    }
+
+    .card-image-2{
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(white, .2), white), url('images/basketball.jpg');
+    }
+
+    .card-image-3{
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(white, .2), white), url('images/tackticalballoonsthumbnail.png');
+    }
+
+    .card-image-4{
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(white, .2), white), url('images/dog.png');
+    }
+
+    .card-text{
+        position: absolute;
+        bottom: 0;
+        color: $gray-dark;
+        width: 100%;
+    }
+
+    &:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+    }
 }
 
 // .alt-font{

@@ -13,13 +13,19 @@ import clockedin from '../assets/images/clockedin.png';
 import { BsStackOverflow } from "react-icons/bs";
 import Button_Primary from "../components/Button_Primary";
 import clockedInBG from "../assets/images/ClockedInBG.png";
-import clockedInBGHand from "../assets/images/ClockedInBGHand.png";
 import PawPortraitsBG from "../assets/images/PawPortraitsBG.jpg";
+import Architecture from '../assets/images/Architecture/Architecture.png';
+import Card from "../components/Card";
+import ProjectModal from "../components/ProjectModal";
+import clockedInFigma from '../assets/images/clockedInFigma.png'
+
 import { useState } from "react";
 
 const HomePage = () => {
 
     const [backgroundPos, setBackgroundPos] = useState('0% 0%');
+    const [scale, setScale] = useState('100%');
+    const [show, setShow] = useState(false);
 
     return ( 
         <>
@@ -41,17 +47,16 @@ const HomePage = () => {
                 </Row>
                 <div className='gradient-vertical'>
                     <Row>
-                        <Col md='4'>
-                            <h1 className='text-start'>WHO</h1>
-                            <h1 className='text-start'>AM</h1>
-                            <h1 className='text-start'>I?</h1>
+                        <Col md='4' className='d-flex align-items-center'>
+                            <h2 className='text-start'>WHO AM I?</h2>
+                            {/* <h1 className='text-start'>AM I?</h1> */}
                         </Col>
                         <Col>
                             <h4 className='h4-bold text-start'>SUMMARY</h4>
                             <ul>
                                 <li>Frontend developer</li>
                                 <li>Fluent in English and Spanish</li>
-                                <li>React, HTML, Javascript, CSS</li>
+                                <li>2+ years with React, HTML, Javascript, CSS</li>
                                 <li>Fullstack certification (MongoDB, Express, React, NodeJS)</li>
                                 <li>Experience with game development in C#.</li>
                                 <li>8 Years professional education experience.</li>
@@ -76,11 +81,12 @@ const HomePage = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col xs='12'>
-                            <h4 className='text-center h4-spaced-dark'>EXPERIENCE</h4>
+                    <Row className='top-space'>
                             <div className='d-flex mt-5'>
-                                <Col className='text-center'>
+                                <Col md='4' className='d-flex align-items-center'>
+                                <h2 className='text-start'>EXPERIENCE</h2>
+                                </Col>
+                                <Col className='text-start'>
                                     <p className='mb-0'>2014-2022</p>
                                     <p className='p-large mb-0'><b>Math and Spanish Educator</b></p>
                                     <p className='mb-0'>Oakvill High School - St. Louis, MO</p>
@@ -90,22 +96,21 @@ const HomePage = () => {
                                     <p className='mb-0'>Belleview Middle School - Nashville, TN</p>
                                     <p className='mb-0 p-small'>2014-2017</p>
                                 </Col>
-                                <Col className='text-center'>
+                                <Col className='text-start'>
                                     <p className='mb-0'>2020-present</p>
                                     <p className='p-large mb-0'><b>Freelance Web Developer</b></p>
                                     <p className='mb-0'>Recent Projects:</p>
                                     <p className='mb-0 p-small'>Farah Architecture</p>
                                     <p className='mb-0 p-small'>Flecks Appliance Center</p>
                                     <p className='mb-0 p-small'>FADM Impresos</p>
-
                                 </Col>
-
                             </div>
-                        </Col>
                     </Row>
-
-
                     <Row className='top-space'>
+                        <Col className='d-flex align-items-center'>
+                            <h2 className='text-start'>SKILLS</h2>
+                        </Col>
+                         
                         <Col className='d-flex flex-column align-items-center'>
                             <ul>
                                 <h4 className='h4-bold text-start'>FRONTEND</h4>
@@ -138,18 +143,23 @@ const HomePage = () => {
                         </Col>
 
                     </Row>
-                    <div className='d-flex justify-content-center'>
-                        <button className='btn-primary w-75 d-flex justify-content-around' style={{marginTop: '6rem'}}>
+                    <Row className="top-space d-flex align-items-center">
+                        <Col>
+                            <h2 className='text-start'>CONTACT</h2>
+                        </Col>
+                        <Col>
                             <div className='d-flex'>
                                 <p>Email:</p>
                                 <p className='mx-3 p-normal'>dwyerjakej@gmail.com</p>
                             </div>
+                        </Col>
+                        <Col>
                             <div className='d-flex'>
                                 <p>LinkedIn:</p>
                                 <p className='mx-3 p-normal'>linkedin.com/in/dwyer-jake25</p>
                             </div>
-                        </button>
-                    </div>
+                        </Col>
+                    </Row>
                 </div>
                 <Row className='height-screen d-flex align-items-center position-relative'>
                     <Col className='position-relative text-center'>
@@ -161,19 +171,18 @@ const HomePage = () => {
                         <h1 className='bg-text-large' style={{zIndex: '4', opacity: '5%', top: '75%'}}>PROJECTS</h1>
                         <div className='color-splash-1'></div>
                         <div className='color-splash-2'></div>
-                        <h4 style={{marginTop: '-30px'}}>FEATURED</h4>
                     </Col>
                 </Row>
                 <Row>
                     <div className='clock-bg position-relative'>
                         <img src={clockedInBG} style={{visibility: 'hidden'}}/>
                         <div className='featured-project-text-container'>
-                            <h1 className='text-white text-start'>ClockedIn</h1>  
+                            <h2 className='text-white text-start'>ClockedIn</h2>  
                             <p className='text-white p-normal'>A fullstack application offering a streamlined solution for businesses to keep track of employee hours.</p>
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
                                     <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -10%')}><h3 className='text-white'>Visit the site</h3></a>
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
+                                    <a onClick={()=>setShow(true)} className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
                                     <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub Repo</h3></a>
                                 </div>
                                 <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div>
@@ -193,93 +202,61 @@ const HomePage = () => {
                                     <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details and Design</h3></a>
                                     <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 60%')}><h3>Git Hub Repo</h3></a>
                                 </div>
-                                {/* <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div> */}
                             </div>
                         </div>
                     </div>
                 </Row>
-                <Row>
-                    <div className='gradient-vertical'>
-                        <h1>OTHER PROJECTS</h1>
-                    </div>
-                </Row>
-            </Container>
-
-            {/* <Container fluid className=''>
-                <Row className='home-header-container' width='100vw' height='100vh'>
-                        <div className="image-primary"></div>
-                        <div className="image-secondary"></div>
-                        <div className="home-header-text">
-                            <h1>Hi, I'm Jake</h1>
-                            <h5>I'm a software developer.</h5>
+                <Row className='position-relative'>
+                    <div className='farah-bg position-relative' style={{backgroundSize: scale}}>
+                        <img src={Architecture} style={{visibility: 'hidden'}}/>
+                        <div className='featured-project-text-container'>
+                            <h2 className='text-start'>Farah Architecture</h2>  
+                            <p className='p-normal'>A modern business page and gallery for an arquitecture company in Mexico City.</p>
+                            <div className='menu d-flex align-items-center' style={{height: '50vh'}} onMouseEnter={()=>setScale('110%')} onMouseLeave={()=>setScale('100%')}>
+                                <div className="menu-items d-flex flex-column ">
+                                    <a href='' className='menu-item text-decoration-none'><h3>Visit the site</h3></a>
+                                    <a href='' className='menu-item text-decoration-none'><h3>Details and Design</h3></a>
+                                    <a href='' className='menu-item text-decoration-none'><h3>Git Hub Repo</h3></a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
 
                 </Row>
-                <Row className='mx-3 mx-md-5'>
-                    <h1 id='projects' className="px-0">My Projects</h1>
-                </Row>
-                <ProjectCard 
-                    title='ClockedIn' 
-                    subtitle='A fullstack application offering a streamlined solution for businesses to keep track of employee hours.' 
-                    tech='MongoDB | Express | NodeJS | React  |  Redux | Bootstrap' 
-                    img={clockedin}
-                    projectLink='https://clocked-in.netlify.app/'
-                    githubLink='https://github.com/jdwyer6/time-tracker'
-                    projectPage='clockedin'
-                />
-                <ProjectCard 
-                    title='Paw Portraits' 
-                    subtitle='A fun website for creating personalized artwork for pet-lovers.' 
-                    tech='React  |  Bootstrap | SASS' 
-                    img={PawPrintsPreview}
-                    projectLink='https://pawportraits.netlify.app/'
-                    githubLink='https://github.com/jdwyer6/silhouettes'
-                    projectPage='PawPrintsPage'
-                />
-                <ProjectCard 
-                    title='Farah Arquitectura' 
-                    subtitle='A modern business page and gallery for an arquitecture company in Mexico City.' 
-                    tech='React  |  Bootstrap | SASS' 
-                    img={farahPreview}
-                    projectLink='https://www.faraharquitectura.com/'
-                    githubLink='https://github.com/jdwyer6/fara-arquitectura'
-                    projectPage='FarahPage'
-                />
-                <Row className='mx-3 mx-md-5 my-5 text-center d-flex justify-content-between'>
-                    <h1 className='my-5'>Games and Other Projects</h1>
-                    <OtherProjectsCard 
-                        title='Flecks Appliance Center' 
-                        img={FlecksPreview} buttonText='Visit project' 
-                        tech='React - Bootstrap - SASS' 
-                        description='A business website for a local appliance retail store.' 
-                        siteLink='https://flecksappliancecenter.com/'
-                    />
-                    <OtherProjectsCard 
-                        title='Doodle Ball' 
-                        siteLink='https://whospayingformike.itch.io/doodle-ball' 
-                        img={basketball} 
-                        tech='C# - Unity' 
-                        buttonText='Play the game!' 
-                        description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more!'
-                    />
-                    <OtherProjectsCard 
-                        title='TACKtical Balloons' 
-                        siteLink='https://whospayingformike.itch.io/tackticalballoons' 
-                        img={tackticalballoons} 
-                        tech='C# - Unity' 
-                        buttonText='Play the game!' 
-                        description='Armed with tacks as projectiles, blast your way through hordes of evil balloons.'
-                    />
-                    <OtherProjectsCard 
-                        title='Fetch!' 
-                        siteLink='https://whospayingformike.itch.io/dogrungame' 
-                        img={dog} tech='C# - Unity' 
-                        buttonText='Play the game!' 
-                        description='Stack abilities by catching frisbees and collect bones for points in an epic platformer.'
+
+                <Row className='xy-padding-adjusted'>
+                        <h1>OTHER PROJECTS</h1>
+                        <Card 
+                            title='FLECKS APPLIANCE CENTER' 
+                            description='A business website for a local appliance retail store.' 
+                            buttonText='Visit project' 
+                            image='card-image-1'
                         />
+                        <Card 
+                            title='DOODLE BALL' 
+                            description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more!' 
+                            buttonText='Play the game!' 
+                            image='card-image-2'
+                        />
+                        <Card 
+                            title="'TACK'TICAL BALLOONS" 
+                            description='Armed with tacks as projectiles, blast your way through hordes of evil balloons.' 
+                            buttonText='Play the game!' 
+                            image='card-image-3'
+                        />
+                        <Card 
+                            title='FETCH' 
+                            description='Stack abilities by catching frisbees and collect bones for points in an epic platformer.' 
+                            buttonText='Play the game!' 
+                            image='card-image-4'
+                        />
+
                 </Row>
-            
-            </Container> */}
+
+
+            </Container>
+            <ProjectModal show={show} setShow={setShow} title='ClockedIn' design={clockedInFigma}/>
 
             
         </>
