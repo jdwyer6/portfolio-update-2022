@@ -14,7 +14,7 @@ body, html {
 }
 
 h1 {
-  font-size: clamp(70px, 6vw, 100px);
+  font-size: clamp(36px, 6vw, 100px);
   font-weight: 700;
   letter-spacing: 0.105em;
   text-align: center;

@@ -38,6 +38,7 @@ const HomePage = () => {
                 <Row className='height-screen d-flex align-items-center position-relative px-3' id="home">
                     <Col className='position-relative text-center'>
                         <h1 style={{zIndex: '5', position: 'relative'}} className='mt-5 pt-5'>JAKE DWYER</h1>
+                        {/* <h1 style={{zIndex: '5', position: 'relative', fontSize: '36px'}} className='d-md-none'>JAKE DWYER</h1> */}
                         <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '30%'}}>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '2', opacity: '15%', top: '15%'}}>JAKE DWYER</h1>
@@ -45,7 +46,7 @@ const HomePage = () => {
                         <h1 className='bg-text-large' style={{zIndex: '4', opacity: '5%', top: '75%'}}>JAKE DWYER</h1>
                         <div className='color-splash-1'></div>
                         <div className='color-splash-2'></div>
-                        <h4 style={{marginTop: '-20px'}} className='d-none d-md-block'>PORTFOLIO</h4>
+                        <h4 style={{marginTop: '-20px'}} className='d-none d-xl-block'>PORTFOLIO</h4>
                         <Link to='projects'>
                             <button className='btn-primary'>GO TO PROJECTS</button>
                         </Link>
