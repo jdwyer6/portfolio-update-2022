@@ -205,8 +205,22 @@ ul {
   padding: 6rem;
 }
 
+.x-padding {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.y-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .xy-padding-adjusted {
   padding: 5rem;
+}
+
+.link:hover {
+  cursor: pointer;
 }
 
 .clock-bg {

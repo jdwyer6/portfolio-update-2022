@@ -17,7 +17,10 @@ import PawPortraitsBG from "../assets/images/PawPortraitsBG.jpg";
 import Architecture from '../assets/images/Architecture/Architecture.png';
 import Card from "../components/Card";
 import ProjectModal from "../components/ProjectModal";
-import clockedInFigma from '../assets/images/clockedInFigma.png'
+import clockedInFigma from '../assets/images/clockedInFigma.png';
+import PawPortraitsFigma from '../assets/images/PawPortraitsFigma.png';
+import FarahFigma from '../assets/images/FarahFigma.png';
+import { Link } from "react-scroll";
 
 import { useState } from "react";
 
@@ -25,14 +28,16 @@ const HomePage = () => {
 
     const [backgroundPos, setBackgroundPos] = useState('0% 0%');
     const [scale, setScale] = useState('100%');
-    const [show, setShow] = useState(false);
+    const [showClockedIn, setShowClockedIn] = useState(false);
+    const [showPawPortraits, setShowPawPortraits] = useState(false);
+    const [showFarah, setShowFarah] = useState(false);
 
     return ( 
         <>
             <Container fluid className='position-relative px-0'>
-                <Row className='height-screen d-flex align-items-center position-relative'>
+                <Row className='height-screen d-flex align-items-center position-relative' id="home">
                     <Col className='position-relative text-center'>
-                        <h1 style={{zIndex: '5', position: 'relative'}}>JAKE DWYER</h1>
+                        <h1 style={{zIndex: '5', position: 'relative'}} className='mt-5 pt-5'>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '30%'}}>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '2', opacity: '15%', top: '15%'}}>JAKE DWYER</h1>
@@ -41,11 +46,14 @@ const HomePage = () => {
                         <div className='color-splash-1'></div>
                         <div className='color-splash-2'></div>
                         <h4 style={{marginTop: '-30px'}}>PORTFOLIO</h4>
-                        <a><button className='btn-primary' onClick={()=>console.log('click')} >GO TO PROJECTS</button></a>
+                        <Link to='projects'>
+                            <button className='btn-primary'>GO TO PROJECTS</button>
+                        </Link>
+                        
                         <p className="my-3 position-relative" style={{zIndex: '9'}}>Software Developer</p>
                     </Col>
                 </Row>
-                <div className='gradient-vertical'>
+                <div className='gradient-vertical' id='about'>
                     <Row>
                         <Col md='4' className='d-flex align-items-center'>
                             <h2 className='text-start'>WHO AM I?</h2>
@@ -143,27 +151,27 @@ const HomePage = () => {
                         </Col>
 
                     </Row>
-                    <Row className="top-space d-flex align-items-center">
+                    <Row className="top-space d-flex align-items-center" id='contact'>
                         <Col>
                             <h2 className='text-start'>CONTACT</h2>
                         </Col>
                         <Col>
-                            <div className='d-flex'>
-                                <p>Email:</p>
+                            <div className='d-flex align-items-center'>
+                                <h4 className='h4-bold mb-0'>Email:</h4>
                                 <p className='mx-3 p-normal'>dwyerjakej@gmail.com</p>
                             </div>
                         </Col>
                         <Col>
-                            <div className='d-flex'>
-                                <p>LinkedIn:</p>
+                            <div className='d-flex align-items-center'>
+                                <h4 className='h4-bold mb-0'>LinkedIn:</h4>
                                 <p className='mx-3 p-normal'>linkedin.com/in/dwyer-jake25</p>
                             </div>
                         </Col>
                     </Row>
                 </div>
-                <Row className='height-screen d-flex align-items-center position-relative'>
+                <Row className='height-screen d-flex align-items-center position-relative' id='projects'>
                     <Col className='position-relative text-center'>
-                        <h1 style={{zIndex: '5', position: 'relative'}}>PROJECTS</h1>
+                        <h1 style={{zIndex: '5', position: 'relative'}} >PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '30%'}}>PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '2', opacity: '15%', top: '15%'}}>PROJECTS</h1>
@@ -181,9 +189,9 @@ const HomePage = () => {
                             <p className='text-white p-normal'>A fullstack application offering a streamlined solution for businesses to keep track of employee hours.</p>
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -10%')}><h3 className='text-white'>Visit the site</h3></a>
-                                    <a onClick={()=>setShow(true)} className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub Repo</h3></a>
+                                    <a href='https://clocked-in.netlify.app/' className='menu-item text-decoration-none' target='_blank' onMouseEnter={()=>setBackgroundPos('0% -10%')}><h3 className='text-white'>Visit the site</h3></a>
+                                    <a onClick={()=>setShowClockedIn(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
+                                    <a href='https://github.com/jdwyer6/time-tracker' className='menu-item text-decoration-none'  target='_blank' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub Repo</h3></a>
                                 </div>
                                 <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div>
                             </div>
@@ -198,9 +206,9 @@ const HomePage = () => {
                             <p className='p-normal'>A fun website for creating personalized artwork for pet-lovers.</p>
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 20%')}><h3>Visit the site</h3></a>
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details and Design</h3></a>
-                                    <a href='' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 60%')}><h3>Git Hub Repo</h3></a>
+                                    <a href='https://pawportraits.netlify.app/' target='_blank' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 20%')}><h3>Visit the site</h3></a>
+                                    <a onClick={()=>setShowPawPortraits(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details and Design</h3></a>
+                                    <a href='https://github.com/jdwyer6/silhouettes' target='_blank' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 60%')}><h3>Git Hub Repo</h3></a>
                                 </div>
                             </div>
                         </div>
@@ -214,9 +222,9 @@ const HomePage = () => {
                             <p className='p-normal'>A modern business page and gallery for an arquitecture company in Mexico City.</p>
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}} onMouseEnter={()=>setScale('110%')} onMouseLeave={()=>setScale('100%')}>
                                 <div className="menu-items d-flex flex-column ">
-                                    <a href='' className='menu-item text-decoration-none'><h3>Visit the site</h3></a>
-                                    <a href='' className='menu-item text-decoration-none'><h3>Details and Design</h3></a>
-                                    <a href='' className='menu-item text-decoration-none'><h3>Git Hub Repo</h3></a>
+                                    <a href='https://faraharquitectura.com/' target='_blank' className='menu-item text-decoration-none'><h3>Visit the site</h3></a>
+                                    <a onClick={()=>setShowFarah(true)} className='menu-item text-decoration-none link'><h3>Details and Design</h3></a>
+                                    <a href='https://github.com/jdwyer6/fara-arquitectura' target='_blank' className='menu-item text-decoration-none'><h3>Git Hub Repo</h3></a>
                                 </div>
                             </div>
                         </div>
@@ -226,38 +234,58 @@ const HomePage = () => {
                 </Row>
 
                 <Row className='xy-padding-adjusted'>
-                        <h1>OTHER PROJECTS</h1>
+                        <h1 className='y-padding'>OTHER PROJECTS</h1>
                         <Card 
-                            title='FLECKS APPLIANCE CENTER' 
-                            description='A business website for a local appliance retail store.' 
-                            buttonText='Visit project' 
-                            image='card-image-1'
+                            title='FETCH' 
+                            description='Stack abilities by catching frisbees and collect bones for points in an epic platformer. (UNITY/C#)' 
+                            buttonText='Play the game!' 
+                            image='card-image-4'
+                            buttonLink="https://whospayingformike.itch.io/dogrungame"
                         />
+
                         <Card 
                             title='DOODLE BALL' 
-                            description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more!' 
+                            description='A puzzle game to test your creativity and basketball skills. Draw barriers, turn off gravity and much more! (UNITY/C#)' 
                             buttonText='Play the game!' 
                             image='card-image-2'
+                            buttonLink='https://whospayingformike.itch.io/doodle-ball'
                         />
                         <Card 
                             title="'TACK'TICAL BALLOONS" 
-                            description='Armed with tacks as projectiles, blast your way through hordes of evil balloons.' 
+                            description='Armed with tacks as projectiles, blast your way through hordes of evil balloons. (UNITY/C#)' 
                             buttonText='Play the game!' 
                             image='card-image-3'
+                            buttonLink='https://whospayingformike.itch.io/tackticalballoons'
                         />
                         <Card 
-                            title='FETCH' 
-                            description='Stack abilities by catching frisbees and collect bones for points in an epic platformer.' 
-                            buttonText='Play the game!' 
-                            image='card-image-4'
+                            title='FLECKS APPLIANCE CENTER' 
+                            description='A business website for a local appliance retail store. (REACT)' 
+                            buttonText='Visit project' 
+                            image='card-image-1'
+                            buttonLink='https://flecksappliancecenter.com/'
                         />
 
+
+                </Row>
+                <Row className='x-padding mt-5'>
+                    <footer className="d-flex flex-wrap justify-content-between align-items-center py- my-4 border-top border-secondary">
+                        <p className="col-md-4 mb-0 text-muted">Jake Dwyer</p>
+
+                        <ul className="nav col-md-4 justify-content-end">
+                            <Link to="home" className="nav-item nav-link px-2 text-muted link">Home</Link>
+                            <Link to='about' className="nav-item nav-link px-2 text-muted link">About</Link>
+                            <Link to='projects' className="nav-item nav-link px-2 text-muted link">Projects</Link>
+                            <Link to='contact' offset={-500} className="nav-item nav-link px-2 text-muted link">Contact</Link>
+                        </ul>
+                    </footer>
                 </Row>
 
 
-            </Container>
-            <ProjectModal show={show} setShow={setShow} title='ClockedIn' design={clockedInFigma}/>
 
+            </Container>
+            <ProjectModal show={showClockedIn} setShow={setShowClockedIn} design={clockedInFigma}/>
+            <ProjectModal show={showPawPortraits} setShow={setShowPawPortraits} design={PawPortraitsFigma}/>
+            <ProjectModal show={showFarah} setShow={setShowFarah} design={FarahFigma}/>
             
         </>
      );
