@@ -35,7 +35,7 @@ const HomePage = () => {
     return ( 
         <>
             <Container fluid className='position-relative px-0'>
-                <Row className='height-screen d-flex align-items-center position-relative' id="home">
+                <Row className='height-screen d-flex align-items-center position-relative px-3' id="home">
                     <Col className='position-relative text-center'>
                         <h1 style={{zIndex: '5', position: 'relative'}} className='mt-5 pt-5'>JAKE DWYER</h1>
                         <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>JAKE DWYER</h1>
@@ -45,7 +45,7 @@ const HomePage = () => {
                         <h1 className='bg-text-large' style={{zIndex: '4', opacity: '5%', top: '75%'}}>JAKE DWYER</h1>
                         <div className='color-splash-1'></div>
                         <div className='color-splash-2'></div>
-                        <h4 style={{marginTop: '-30px'}}>PORTFOLIO</h4>
+                        <h4 style={{marginTop: '-20px'}} className='d-none d-md-block'>PORTFOLIO</h4>
                         <Link to='projects'>
                             <button className='btn-primary'>GO TO PROJECTS</button>
                         </Link>
@@ -55,11 +55,10 @@ const HomePage = () => {
                 </Row>
                 <div className='gradient-vertical' id='about'>
                     <Row>
-                        <Col md='4' className='d-flex align-items-center'>
+                        <Col xs='12' md='4' className='d-flex align-items-center'>
                             <h2 className='text-start'>WHO AM I?</h2>
-                            {/* <h1 className='text-start'>AM I?</h1> */}
                         </Col>
-                        <Col>
+                        <Col xs='12' md='4'>
                             <h4 className='h4-bold text-start'>SUMMARY</h4>
                             <ul>
                                 <li>Frontend developer</li>
@@ -70,7 +69,7 @@ const HomePage = () => {
                                 <li>8 Years professional education experience.</li>
                             </ul>
                         </Col>
-                        <Col>
+                        <Col xs='12' md='4' className='my-3 my-md-0'>
                             <h4 className='h4-bold text-start'>EDUCATION</h4>
                             <div className='mb-3'>
                                 <p className='mb-0'>Full Stack Web Development Certification</p>
@@ -90,13 +89,13 @@ const HomePage = () => {
                         </Col>
                     </Row>
                     <Row className='top-space'>
-                            <div className='d-flex mt-5'>
-                                <Col md='4' className='d-flex align-items-center'>
+                            <div className='d-md-flex'>
+                                <Col xs='12' md='4' className='d-flex align-items-center'>
                                 <h2 className='text-start'>EXPERIENCE</h2>
                                 </Col>
-                                <Col className='text-start'>
+                                <Col xs='12' md='4' className='text-start'>
                                     <p className='mb-0'>2014-2022</p>
-                                    <p className='p-large mb-0'><b>Math and Spanish Educator</b></p>
+                                    <h4 className='h4-bold mb-0 text-start'>MATH AND SPANISH EDUCATOR</h4>
                                     <p className='mb-0'>Oakvill High School - St. Louis, MO</p>
                                     <p className='mb-0 p-small'>2020-2022</p>
                                     <p className='mb-0'>ASF & Colegio Northridge - Mexico City, MX</p>
@@ -104,9 +103,9 @@ const HomePage = () => {
                                     <p className='mb-0'>Belleview Middle School - Nashville, TN</p>
                                     <p className='mb-0 p-small'>2014-2017</p>
                                 </Col>
-                                <Col className='text-start'>
+                                <Col xs='12' md='4' className='text-start my-5 my-md-0'>
                                     <p className='mb-0'>2020-present</p>
-                                    <p className='p-large mb-0'><b>Freelance Web Developer</b></p>
+                                    <h4 className='h4-bold mb-0 text-start'>FREELANCE WEB DEVELOPER</h4>
                                     <p className='mb-0'>Recent Projects:</p>
                                     <p className='mb-0 p-small'>Farah Architecture</p>
                                     <p className='mb-0 p-small'>Flecks Appliance Center</p>
@@ -115,11 +114,11 @@ const HomePage = () => {
                             </div>
                     </Row>
                     <Row className='top-space'>
-                        <Col className='d-flex align-items-center'>
+                        <Col xs='12' md='3' className='d-flex align-items-center'>
                             <h2 className='text-start'>SKILLS</h2>
                         </Col>
                          
-                        <Col className='d-flex flex-column align-items-center'>
+                        <Col xs='6' md='3' className='d-flex flex-column'>
                             <ul>
                                 <h4 className='h4-bold text-start'>FRONTEND</h4>
                                 <li>React</li>
@@ -130,7 +129,7 @@ const HomePage = () => {
                                 <li>Bootstrap</li>
                             </ul>
                         </Col>
-                        <Col className='d-flex flex-column align-items-center'>
+                        <Col xs='6' md='3' className='d-flex flex-column'>
                             <ul>
                                 <h4 className='h4-bold text-start'>BACKEND</h4>
                                 <li>NodeJS</li>
@@ -138,7 +137,7 @@ const HomePage = () => {
                                 <li>Express</li>
                             </ul>
                         </Col>
-                        <Col className='d-flex flex-column align-items-center'>
+                        <Col xs='12' md='3' className='d-flex flex-column'>
                             <ul>
                                 <h4 className='h4-bold text-start'>OTHER</h4>
                                 <li>Git</li>
@@ -155,7 +154,7 @@ const HomePage = () => {
                         <Col>
                             <h2 className='text-start'>CONTACT</h2>
                         </Col>
-                        <Col>
+                        <Col >
                             <div className='d-flex align-items-center'>
                                 <h4 className='h4-bold mb-0'>Email:</h4>
                                 <p className='mx-3 p-normal'>dwyerjakej@gmail.com</p>
@@ -164,14 +163,16 @@ const HomePage = () => {
                         <Col>
                             <div className='d-flex align-items-center'>
                                 <h4 className='h4-bold mb-0'>LinkedIn:</h4>
-                                <p className='mx-3 p-normal'>linkedin.com/in/dwyer-jake25</p>
+                                <p className='mx-3 p-normal d-block d-md-none'>.../dwyer-jake25</p>
+                                <p className='mx-3 p-normal d-none d-md-block'>linkedin.com/in/dwyer-jake25</p>
                             </div>
                         </Col>
                     </Row>
                 </div>
                 <Row className='height-screen d-flex align-items-center position-relative' id='projects'>
                     <Col className='position-relative text-center'>
-                        <h1 style={{zIndex: '5', position: 'relative'}} >PROJECTS</h1>
+                        <h1 className='d-md-none' style={{zIndex: '5', position: 'relative', fontSize: '48px'}} >PROJECTS</h1>
+                        <h1 className='d-none d-md-block' style={{zIndex: '5', position: 'relative'}} >PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '1', opacity: '25%'}}>PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '3', opacity: '10%', top: '30%'}}>PROJECTS</h1>
                         <h1 className='bg-text-large' style={{zIndex: '2', opacity: '15%', top: '15%'}}>PROJECTS</h1>

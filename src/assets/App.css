@@ -14,16 +14,15 @@ body, html {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: clamp(70px, 6vw, 100px);
   font-weight: 700;
-  line-height: 135px;
   letter-spacing: 0.105em;
   text-align: center;
   color: #575757;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: clamp(40px, 3.5vw, 90px);
   font-weight: 400;
   line-height: 90px;
   letter-spacing: 0.05em;
@@ -91,7 +90,7 @@ p {
 }
 
 .p-large {
-  font-size: 24px;
+  font-size: clamp(14px, 1.6vw, 24px);
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.04em;
@@ -108,7 +107,7 @@ p {
 li {
   font-size: 16px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: clamp(24px, 2.1vw, 36px);
   letter-spacing: 0.04em;
   text-align: left;
   color: #575757;
@@ -166,7 +165,7 @@ ul {
   border-radius: 50px;
   background-color: #E2DEDD;
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(15px, 1.3vw, 20px);
   padding: 0.5rem 4rem;
   border: none;
   box-shadow: 6px 6px 12px rgba(87, 87, 87, 0.4), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
@@ -190,7 +189,7 @@ ul {
 
 .gradient-vertical {
   background-image: linear-gradient(to bottom, #F5F5F5, rgba(246, 222, 200, 0.8), rgba(209, 231, 232, 0.8), #F5F5F5);
-  padding: 6rem;
+  padding: clamp(1rem, 6.4vw, 6rem);
 }
 
 .bg-dark {
@@ -198,21 +197,21 @@ ul {
 }
 
 .top-space {
-  margin-top: 6rem;
+  margin-top: clamp(1rem, 6.4vw, 6rem);
 }
 
 .xy-padding {
-  padding: 6rem;
+  padding: clamp(1rem, 6.4vw, 6rem);
 }
 
 .x-padding {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: clamp(1rem, 6.4vw, 6rem);
+  padding-right: clamp(1rem, 6.4vw, 6rem);
 }
 
 .y-padding {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: clamp(1rem, 6.4vw, 6rem);
+  padding-bottom: clamp(1rem, 6.4vw, 6rem);
 }
 
 .xy-padding-adjusted {
@@ -253,7 +252,7 @@ ul {
   z-index: 5;
   top: 0;
   left: 0;
-  padding: 6rem;
+  padding: clamp(1rem, 6.4vw, 6rem);
   width: 40%;
 }
 
