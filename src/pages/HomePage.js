@@ -192,8 +192,9 @@ const HomePage = () => {
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
                                     <a href='https://clocked-in.netlify.app/' className='menu-item text-decoration-none' target='_blank' onMouseEnter={()=>setBackgroundPos('0% -10%')}><h3 className='text-white'>Visit the site</h3></a>
-                                    <a onClick={()=>setShowClockedIn(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details and Design</h3></a>
-                                    <a href='https://github.com/jdwyer6/time-tracker' className='menu-item text-decoration-none'  target='_blank' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub Repo</h3></a>
+                                    <a onClick={()=>setShowClockedIn(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% -20%')}><h3 className='text-white'>Details</h3></a>
+                                    <a href='https://github.com/jdwyer6/time-tracker' className='menu-item text-decoration-none'  target='_blank' onMouseEnter={()=>setBackgroundPos('0% -30%')}><h3 className='text-white'>Git Hub: Frontend</h3></a>
+                                    <a href='https://github.com/jdwyer6/time-tracker-server' className='menu-item text-decoration-none'  target='_blank' onMouseEnter={()=>setBackgroundPos('0% -40%')}><h3 className='text-white'>Git Hub: Backend</h3></a>
                                 </div>
                                 <div className='menu-background-pattern' style={{backgroundPosition: backgroundPos}}></div>
                             </div>
@@ -209,7 +210,7 @@ const HomePage = () => {
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}}>
                                 <div className="menu-items d-flex flex-column ">
                                     <a href='https://pawportraits.netlify.app/' target='_blank' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 20%')}><h3>Visit the site</h3></a>
-                                    <a onClick={()=>setShowPawPortraits(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details and Design</h3></a>
+                                    <a onClick={()=>setShowPawPortraits(true)} className='menu-item text-decoration-none link' onMouseEnter={()=>setBackgroundPos('0% 40%')}><h3>Details</h3></a>
                                     <a href='https://github.com/jdwyer6/silhouettes' target='_blank' className='menu-item text-decoration-none' onMouseEnter={()=>setBackgroundPos('0% 60%')}><h3>Git Hub Repo</h3></a>
                                 </div>
                             </div>
@@ -225,7 +226,7 @@ const HomePage = () => {
                             <div className='menu d-flex align-items-center' style={{height: '50vh'}} onMouseEnter={()=>setScale('110%')} onMouseLeave={()=>setScale('100%')}>
                                 <div className="menu-items d-flex flex-column ">
                                     <a href='https://faraharquitectura.com/' target='_blank' className='menu-item text-decoration-none'><h3>Visit the site</h3></a>
-                                    <a onClick={()=>setShowFarah(true)} className='menu-item text-decoration-none link'><h3>Details and Design</h3></a>
+                                    <a onClick={()=>setShowFarah(true)} className='menu-item text-decoration-none link'><h3>Details</h3></a>
                                     <a href='https://github.com/jdwyer6/fara-arquitectura' target='_blank' className='menu-item text-decoration-none'><h3>Git Hub Repo</h3></a>
                                 </div>
                             </div>
