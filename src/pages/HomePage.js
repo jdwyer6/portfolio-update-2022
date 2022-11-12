@@ -94,6 +94,14 @@ const HomePage = () => {
                                 <Col xs='12' md='4' className='d-flex align-items-center'>
                                     <h2 className='text-start'>EXPERIENCE</h2>
                                 </Col>
+                                <Col xs='12' md='4' className='text-start my-5 my-md-0'>
+                                    <p className='mb-0'>2020-present</p>
+                                    <h4 className='h4-bold mb-0 text-start'>FREELANCE WEB DEVELOPER</h4>
+                                    <p className='mb-0'>Recent Projects:</p>
+                                    <p className='mb-0 p-small'>Farah Architecture</p>
+                                    <p className='mb-0 p-small'>Flecks Appliance Center</p>
+                                    <p className='mb-0 p-small'>FADM Impresos</p>
+                                </Col>
                                 <Col xs='12' md='4' className='text-start'>
                                     <p className='mb-0'>2014-2022</p>
                                     <h4 className='h4-bold mb-0 text-start'>MATH AND SPANISH EDUCATOR</h4>
@@ -103,14 +111,6 @@ const HomePage = () => {
                                     <p className='mb-0 p-small'>2017-2020</p>
                                     <p className='mb-0'>Belleview Middle School - Nashville, TN</p>
                                     <p className='mb-0 p-small'>2014-2017</p>
-                                </Col>
-                                <Col xs='12' md='4' className='text-start my-5 my-md-0'>
-                                    <p className='mb-0'>2020-present</p>
-                                    <h4 className='h4-bold mb-0 text-start'>FREELANCE WEB DEVELOPER</h4>
-                                    <p className='mb-0'>Recent Projects:</p>
-                                    <p className='mb-0 p-small'>Farah Architecture</p>
-                                    <p className='mb-0 p-small'>Flecks Appliance Center</p>
-                                    <p className='mb-0 p-small'>FADM Impresos</p>
                                 </Col>
                             </Row>
                     </Row>
