@@ -172,6 +172,12 @@ ul {
   position: relative;
   z-index: 10;
   color: #575757;
+  transition: all 0.4s ease;
+}
+.btn-primary:hover {
+  transform: translate(-1px, -1px);
+  background-color: #f1f1f1;
+  box-shadow: 8px 8px 16px rgba(87, 87, 87, 0.4), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
 }
 
 .btn-secondary {
