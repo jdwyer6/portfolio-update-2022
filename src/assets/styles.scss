@@ -199,6 +199,14 @@ ul{
     position: relative;
     z-index: 10;
     color: $gray-dark;
+    transition: all .4s ease;
+
+    &:hover{
+        transform: translate(-1px, -1px);
+        background-color: #f1f1f1;
+        box-shadow: 8px 8px 16px rgba($gray-dark, .4),
+        inset 6px 6px 12px rgba(white, .4);
+    }
 }
 
 .btn-secondary{

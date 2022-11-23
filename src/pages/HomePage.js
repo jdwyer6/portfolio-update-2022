@@ -21,6 +21,12 @@ import clockedInFigma from '../assets/images/clockedInFigma.png';
 import PawPortraitsFigma from '../assets/images/PawPortraitsFigma.png';
 import FarahFigma from '../assets/images/FarahFigma.png';
 import { Link } from "react-scroll";
+import EurekaWatch from '../assets/images/eureka-watch.png';
+import FarahEmail from '../assets/images/farah-email.png';
+import Email_Card from "../components/Email_Card";
+import eurekapreview from '../assets/images/eureka-preview.png';
+import farahpreview from '../assets/images/farah-preview.png';
+import EmailTemplateModal from "../components/EmailTemplateModal";
 
 import { useState } from "react";
 
@@ -31,6 +37,8 @@ const HomePage = () => {
     const [showClockedIn, setShowClockedIn] = useState(false);
     const [showPawPortraits, setShowPawPortraits] = useState(false);
     const [showFarah, setShowFarah] = useState(false);
+    const [showFarahEmail, setShowFarahEmail] = useState(false);
+    const [showEureka, setShowEureka] = useState(false);
 
     return ( 
         <>
@@ -237,8 +245,30 @@ const HomePage = () => {
                 </Row>
 
                 <Row className='xy-padding-adjusted'>
+                        <h1 className='y-padding d-none d-md-block'>MY EMAIL TEMPLATES</h1>
+                        <h1 className='y-padding d-block d-md-none text-center' style={{fontSize: '36px'}}>EMAIL TEMPLATES</h1>
+                        <Col xs='12' lg='6' className='my-2 d-flex justify-content-center'>
+                            <Email_Card 
+                            title='Farah Architecture'
+                            image={FarahEmail}
+                            codeLink='https://github.com/jdwyer6/farah-architecture-email-marketing'
+                            figmaLink='https://www.figma.com/file/d0W6UlH6pCuP6PkAC7KscY/FARAH-Architecture-Email-Template?node-id=0%3A1&t=5IQHZK8mOaLijwHz-1'
+                            previewLink={()=>setShowFarahEmail(true)}
+                            />
+                        </Col>
+                        <Col xs='12' lg='6' className='my-2 d-flex justify-content-center' >
+                            <Email_Card
+                                title='Eureka Watch'
+                                image={EurekaWatch}
+                                codeLink='https://github.com/jdwyer6/eureka-watch-email'
+                                figmaLink='https://www.figma.com/file/5Sz0eYfk7QharKk6ufpHTk/Eureka-Watch?node-id=1%3A15&t=0bfC3KhMkVEzgxBp-1'
+                                previewLink={()=>setShowEureka(true)}
+                            />
+                           
+                        </Col>
                         <h1 className='y-padding d-none d-md-block'>OTHER PROJECTS</h1>
                         <h1 className='y-padding d-block d-md-none text-center' style={{fontSize: '36px'}}>OTHER PROJECTS</h1>
+
                         <Col xs='12' md='6' lg='3' className='my-2'>
                             <Card 
                                 title='FETCH' 
@@ -296,6 +326,8 @@ const HomePage = () => {
             <ProjectModal show={showClockedIn} setShow={setShowClockedIn} design={clockedInFigma}/>
             <ProjectModal show={showPawPortraits} setShow={setShowPawPortraits} design={PawPortraitsFigma}/>
             <ProjectModal show={showFarah} setShow={setShowFarah} design={FarahFigma}/>
+            <EmailTemplateModal show={showFarahEmail} setShow={setShowFarahEmail} design={farahpreview}/>
+            <EmailTemplateModal show={showEureka} setShow={setShowEureka} design={eurekapreview}/>
             
         </>
      );
